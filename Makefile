@@ -33,3 +33,5 @@ run-model:
 # Clean up virtual environment (optional)
 clean:
 	rm -rf $(VENV_DIR)
+	ollama rm llama3.2:1b
+	ollama rm mxbai-embed-large

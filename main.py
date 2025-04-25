@@ -7,6 +7,13 @@ model = OllamaLLM(model="llama3.2:1b")
 template = """
 You are an expert at calculating the protein, carbohydrate, and fat content of meals. Here is some relevent data: {data}
 Here is the question to answer: {question}
+
+Your response should be in the following format:
+
+calories:
+protein:
+carbohydrates:
+fat:
 """
 
 prompt = ChatPromptTemplate.from_template(template)
